@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <Homepage />
-      <p>Why is the code not working?</p>
+      <p>Render Subsequent components hERE!</p>
     </div>
   );
 };
