@@ -2,7 +2,7 @@
 ![License](https://img.shields.io/static/v1?style=for-the-badge&message=Open+Source+Initiative&color=3DA639&logo=Open+Source+Initiative&logoColor=FFFFFF&label=)
 
 
-https://user-images.githubusercontent.com/94718571/205065058-7c6db3b9-1904-4692-9877-0675c49e68c6.mp4
+![giphy](https://user-images.githubusercontent.com/94718571/205066591-aec64a00-4500-4a35-a66f-4b80ef8ae098.gif)
 
 
 #### ABOUT VOYAGER (START-UP)
