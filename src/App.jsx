@@ -1,14 +1,23 @@
-//import reactLogo from "./assets/react.svg";
 import React from "react";
-import Homepage from "./pages/Homepage";
+import "./styles/globals.css";
+import About from "./pages/About";
+import Feature from "./pages/Feature";
+import Feature2 from "./pages/Feature2";
+import Stats from "./pages/Stats";
+import Footer from "./pages/Footer";
+import Navbar from "./components/Navbar";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Homepage />
-      <p>Render Subsequent components hERE!</p>
-    </div>
+    <>
+      <Navbar />
+      <About />
+      <Feature />
+      <Stats />
+      <Feature2 />
+      <Footer />
+    </>
   );
-};
+}
 
 export default App;

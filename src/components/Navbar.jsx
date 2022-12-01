@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../assets/lorum-ipsum-logo.jpg";
+import Logo from "../assets/V-revv-10.jpg";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -7,7 +7,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [navBg, setNavBg] = useState("#fff");
   const [linkColor, setLinkColor] = useState("#1f2937");
 
   const handleNav = () => {
@@ -38,16 +38,19 @@ const Navbar = () => {
         <a>
           <img
             src={Logo}
-            alt="HappenEvents-Logo"
+            alt="voyager-Logo"
             height={25}
             width={50}
             className="cursor-pointer"
           />
         </a>
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+          <ul
+            style={{ color: `${linkColor}` }}
+            className="hidden md:flex cursor-pointer"
+          >
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <a href="/"></a> Home
+              <a href="/"></a>Sign Up
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
               <a href="/#Mission"></a>Mission
@@ -68,8 +71,15 @@ const Navbar = () => {
             <AiOutlineMenu size={25} />
           </div>
         </div>
-        <div>
-          <button>Sign Up</button>
+        <div className="">
+          <a href="/#login" className="">
+            <button
+              className="bg-sky-500 text-white active:bg-sky-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button"
+            >
+              Get started
+            </button>
+          </a>
         </div>
       </div>
       {/* Mobile Menu */}
@@ -90,9 +100,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <a href="/">
-                <a>
-                  <img src={Logo} width="50" height="25" alt="happenEvents" />
-                </a>
+                <img src={Logo} width="50" height="25" alt="voyager" />
               </a>
               <div
                 onClick={handleNav}
@@ -103,7 +111,7 @@ const Navbar = () => {
             </div>
             <div className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
-                Lorem ipsum dolor sit amet
+                VOYAGER... Your all in one marketplace
               </p>
             </div>
           </div>
@@ -111,12 +119,12 @@ const Navbar = () => {
             <ul className="uppercase">
               <a href="/">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Home
+                  SIGN UP
                 </li>
               </a>
               <a href="/#about">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  About
+                  OUR COMPANY
                 </li>
               </a>
               <a href="/#skills">
@@ -136,7 +144,7 @@ const Navbar = () => {
               </a>
             </ul>
             <div className="pt-40">
-              <p className0="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-[#5651e5]">
                 Get started!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">

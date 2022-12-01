@@ -1,5 +1,5 @@
 {
-  "name": "happenevents",
+  "name": "voyager",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "vite-plugin-svgr": "^2.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
