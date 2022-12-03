@@ -5,7 +5,13 @@ import { ReactComponent as GithubSVG } from "../assets/svg/github.svg";
 import { ReactComponent as LinkedinSVG } from "../assets/svg/linkedin.svg";
 import { ReactComponent as AmazonSVG } from "../assets/svg/amazon.svg";
 
+import countapi from "countapi-js";
+
 const Footer = () => {
+  countapi.hit("voyagertrust.netlify.app", "visits").then((result) => {
+    document.getElementById("updateViews").innerText = result.value;
+  });
+
   return (
     <div className="bg-black dark:bg-gray-800 pt-4 pb-8 xl:pt-8">
       <div className="max-w-screen-lg px-4 mx-auto text-gray-400 xl:max-w-screen-xl sm:px-6 md:px-8 dark:text-gray-300">
@@ -94,6 +100,10 @@ const Footer = () => {
         </div>
         <div className="text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
           @Voyagerdotcom 2022. All rights Reserved!
+        </div>
+        <div className="text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
+          <p>Visitors:&nbsp;</p>
+          <div id="updateViews"></div>
         </div>
       </div>
     </div>
